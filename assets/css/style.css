@@ -1,3 +1,14 @@
 h1 {
-  color: red;
+  color: #efbc9b;
+  background-color: #496989;
+}
+
+button {
+  color: #efbc9b;
+  background-color: #496989;
+}
+
+p {
+  color: #efbc9b;
+  background-color: #496989;
 }
