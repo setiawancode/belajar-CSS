@@ -19,6 +19,18 @@
         font-size: smaller;
         color: darkviolet;
       }
+      /* pseudo classes */
+      .content > p:hover {
+        cursor: pointer;
+        text-transform: capitalize;
+      }
+      /* pseudo elements */
+      section > p::first-letter {
+        color: darkviolet;
+      }
+      section:nth-of-type(2n):hover {
+        font-family: "Courier New", Courier, monospace;
+      }
       /* ajdacent selector */
       a + button {
         background-color: darkorange;
@@ -36,17 +48,17 @@
     <hr />
     <section class="content">
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-      <p>dibuat oleh : <span>Jhon Doe</span></p>
+      <p>Dibuat oleh : <span>Jhon Doe</span></p>
     </section>
     <hr />
     <section class="content">
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-      <p>dibuat oleh : <span>Jhon Doe</span></p>
+      <p>Dibuat oleh : <span>Jhon Doe</span></p>
     </section>
     <hr />
     <section class="content">
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-      <p>dibuat oleh : <span>Jhon Doe</span></p>
+      <p>Dibuat oleh : <span>Jhon Doe</span></p>
       <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos in
@@ -59,7 +71,7 @@
     <hr />
     <section class="content">
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-      <p>dibuat oleh : <span>Jhon Doe</span></p>
+      <p>Dibuat oleh : <span>Jhon Doe</span></p>
       <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos in
@@ -76,5 +88,7 @@
     </p>
     <a href="#">This is link</a>
     <button>Change</button>
+    <hr />
+    <footer>Copyright &copy; 2024</footer>
   </body>
 </html>
