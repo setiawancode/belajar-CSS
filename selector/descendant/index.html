@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Descendant Selector</title>
     <style>
+      /* decendant selector
       section p {
         font-size: smaller;
         color: darkviolet;
-      }
-      .content p {
+      } */
+      /* direct decendant */
+      .content > p {
         font-size: smaller;
-        color: brown;
+        color: darkviolet;
+      }
+      /* ajdacent selector */
+      a + button {
+        background-color: darkorange;
       }
     </style>
   </head>
   <body>
     <h1>Blog Lorem</h1>
     <hr />
-    <section>
+    <section class="content">
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
       <p>dibuat oleh : <span>Jhon Doe</span></p>
     </section>
@@ -28,5 +34,37 @@
       <p>dibuat oleh : <span>Jhon Doe</span></p>
     </section>
     <hr />
+    <section class="content">
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+      <p>dibuat oleh : <span>Jhon Doe</span></p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos in
+          veniam quam dolorem voluptatibus excepturi minima asperiores ut!
+          Excepturi, dicta placeat. Nulla unde consectetur quidem accusamus
+          sapiente laboriosam vel.
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section class="content">
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+      <p>dibuat oleh : <span>Jhon Doe</span></p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos in
+          veniam quam dolorem voluptatibus excepturi minima asperiores ut!
+          Excepturi, dicta placeat. Nulla unde consectetur quidem accusamus
+          sapiente laboriosam vel.
+        </p>
+      </div>
+    </section>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit Pariatur similique
+      consequatur
+    </p>
+    <a href="#">This is link</a>
+    <button>Change</button>
   </body>
 </html>
